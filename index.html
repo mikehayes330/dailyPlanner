@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+      <p id="currentTime" class="lead"></p>
+    </header>
+    <div class="container">
+      <table class="table" >
+        <tr class="row" data-time="9">
+          <td class="time-block" data-time="9">9 AM</td>
+          <td><textarea class="input1"></textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+        <tr class="row" data-time="10">
+          <td class="time-block" data-time="10">10 AM</td>
+          <td><textarea class="input2"></textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+        <tr class="row" data-time="11">
+          <td class="time-block" data-time="11">11 AM</td>
+          <td class="description"><textarea class="input3"></textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+        <tr class="row" data-time="12">
+          <td class="time-block" data-time="12">12 PM</td>
+          <td><textarea class="input4"></textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+        <tr class="row" data-time="13">
+          <td class="time-block" data-time="13">1 PM</td>
+          <td><textarea class="input5">this will be a todo</textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+        <tr class="row" data-time="14">
+          <td class="time-block" data-time="14">2 PM</td>
+          <td><textarea class="input6"></textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+        <tr class="row" data-time="15">
+          <td class="time-block" data-time="15">3 PM</td>
+          <td><textarea class="input7"></textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+        <tr class="row" data-time="16">
+          <td class="time-block" data-time="16">4 PM</td>
+          <td><textarea class="input8"></textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+        <tr class="row" data-time="17">
+          <td class="time-block" data-time="17">5 PM</td>
+          <td class = ""><textarea class="input9"></textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+        <tr class="row" data-time="18">
+          <td class="time-block" data-time="18">6 PM</td>
+          <td><textarea class="input10"></textarea></td>
+          <td>
+            <button class="saveBtn"><i class="fas fa-lock"></i></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
