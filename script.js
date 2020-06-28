@@ -2,12 +2,12 @@
 var currentDayElement = $("#currentDay");
 var currentTimeElement = $("#currentTime");
 var saveButtonElement = $(".saveBtn");
-var currentHour =  moment().format("H");
-console.log(currentHour);
+var currentHour = moment().format("H");
+//console.log(currentHour);
 
 //display current day on top
 currentDayElement.text(moment().format("dddd, MMMM Do YYYY"));
-currentTimeElement.text(moment().format("h:mm A"))
+currentTimeElement.text(moment().format("h:mm A"));
 
 //event listeners
 saveButtonElement.on("click", saveButton);
@@ -15,7 +15,6 @@ saveButtonElement.on("click", saveButton);
 // functions
 showTodos();
 checkHour();
-
 
 function saveButton(e) {
   e.preventDefault();
@@ -35,10 +34,9 @@ function showTodos() {
 
 function checkHour() {
   $(".row").each(function () {
-    
     if ($(this).attr("data-time") < currentHour) {
       $(this).addClass("past");
-      console.log($(this).attr("data-time"));
+      //console.log($(this).attr("data-time"));
     }
     if ($(this).attr("data-time") == currentHour) {
       $(this).addClass("present");
@@ -62,7 +60,7 @@ function saveTodo() {
         localStorage.setItem("input" + i, $(".input" + i).val())
       );
     } else {
-        localStorage.setItem("input" + i, "")
+      localStorage.setItem("input" + i, "");
     }
   }
 }
